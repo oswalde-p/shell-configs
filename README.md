@@ -2,15 +2,7 @@
 just a place to store some shell config files
 
 ## Usage
-### Clone the repo
-``` bash
-git clone
-cd shell-configs/
-git submodule init
-git submodule update
-```
 
-### source the files
 After cloning, add the following lines to .zshrc:
 ```
 ZSH_THEME="robbyrussel"
