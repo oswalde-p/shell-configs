@@ -2,8 +2,19 @@
 just a place to store some shell config files
 
 ## Usage
+### Clone the repo
+``` bash
+git clone
+cd shell-configs/
+git submodule init
+git submodule update
+```
+
+### source the files
 After cloning, add the following lines to .zshrc:
 ```
+export ZSH="~/shell-configs/.oh-my-zsh/"
+ZSH_THEME="robbyrussel"
 source ~/shell-configs/.bash_aliases
 source ~/shell-configs/.zsh_plugins
 ```
