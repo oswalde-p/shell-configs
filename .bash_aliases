@@ -30,3 +30,18 @@ frsh(){
     cd ~
     clear
 }
+
+# generate a new meeting note doc
+meeting(){
+	currentDate=`date +"%Y-%m-%d"`
+	dirName="$1"
+	fileName="${currentDate} $2.md"
+	cp ~/Documents/meeting-template.md ~/Documents/${dirName}/meetings/${fileName}
+	open ~/Documents/${dirName}/meetings/${fileName}
+}
+
+# shell in a docker container
+dsh(){
+    echo "docker exec -it $1 /bin/sh "
+    docker exec -it "$1" /bin/sh 
+}

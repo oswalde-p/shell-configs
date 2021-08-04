@@ -1,6 +1,7 @@
 plugins=(
   git
   kube-ps1
+  autojump
   zsh-autosuggestions
 )
 
